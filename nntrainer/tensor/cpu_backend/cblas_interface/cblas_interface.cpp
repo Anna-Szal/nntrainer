@@ -73,6 +73,11 @@ float __cblas_snrm2(const unsigned int N, const float *X,
   return cblas_snrm2(N, X, incX);
 }
 
+double __cblas_dnrm2(const unsigned int N, const double *X,
+                    const unsigned int incX) {
+  return cblas_dnrm2(N, X, incX);
+}
+
 void __cblas_sgemm(const unsigned int TStorageOrder, bool TransA, bool TransB,
                    const unsigned int M, const unsigned int N,
                    const unsigned int K, const float alpha, const float *A,
